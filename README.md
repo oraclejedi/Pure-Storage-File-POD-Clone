@@ -32,5 +32,9 @@ The repository includes a sample JSON file which includes:
 The script will use the provided JSON file to read the IP or FQDN of the Flash Array, and an API token to use to authenticate.
 Alternatively, if the JSON file does not provide these, the script will look for the OS variables FA_HOST and API_TOKEN.
 
+# Safety Lock
+The script requires the argument -x to be added to the command line before it will create a new pod.  
+If you omit this argument, the script will test connectivity and report what it would do, but will not create any new pods or filesystems in the Flash Array.
+
 
 
