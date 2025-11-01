@@ -12,10 +12,10 @@ After the pod has been cloned and exported, the exported file systems may be mou
 
 # Usage:
 The script takes several arguments:
--f the name of a JSON file which may include the FA address and API token, and how to export the cloned pod.
--s the name of the soure pod to clone
--t the name of the new pod that will be created
--e the extension to add to the cloned file exports in Purity (e.g. if the source pod has file exports "data" and "logs", and the extension is specified as "clone", the cloned pod will export file systems "dataclone" and "datalogs".  To specify a hypen, use curly braces: {-}clone )
+- -f the name of a JSON file which may include the FA address and API token, and how to export the cloned pod.
+- -s the name of the soure pod to clone
+- -t the name of the new pod that will be created
+- -e the extension to add to the cloned file exports in Purity (e.g. if the source pod has file exports "data" and "logs", and the extension is specified as "clone", the cloned pod will export file systems "dataclone" and "datalogs".  To specify a hypen, use curly braces: {-}clone )
 
 # Sample:
 $ python fa_pod_cp.py -f sample.json -s source-pod -t clone-pod -e {-}clone
